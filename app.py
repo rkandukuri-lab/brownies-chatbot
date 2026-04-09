@@ -1,12 +1,10 @@
 from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import PyPDFLoader
-import os
-from dotenv import load_dotenv
 import streamlit as st
 
-load_dotenv()
 
-client = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY_FREE"), model="gpt-4.1-nano")
+
+client = ChatOpenAI(api_key=OPENAI_API_KEY_FREE, model="gpt-4.1-nano")
 
 my_file = "The-Book-of-Brownies.pdf"
 
